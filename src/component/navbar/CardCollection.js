@@ -21,6 +21,7 @@ export default function CardCollection({ linkGambar }) {
         <Button
           variant="contained"
           size="small"
+          href="/detailproduk"
           sx={{
             bottom: "50px",
             textTransform: "none",

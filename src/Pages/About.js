@@ -2,6 +2,7 @@ import { Grid } from "@mui/material";
 import React from "react";
 import NavbarAbout from "../component/navbar/NavbarAbout";
 import BodyAbout from "../component/navbar/BodyAbout";
+import Footer from "../component/navbar/Footer";
 
 export default function About() {
   return (
