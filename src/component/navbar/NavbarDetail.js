@@ -4,7 +4,7 @@ import React from "react";
 export default function NavbarDetail() {
   const currentURL = window.location.href;
   console.log(currentURL);
-  const ButtonBack = [{ text: "Back", link: "/" }];
+  const ButtonBack = [{ text: "Back", link: "/collection" }];
   return (
     <div>
       <Grid container>

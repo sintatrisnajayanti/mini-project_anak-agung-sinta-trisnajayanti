@@ -1,7 +1,7 @@
 import { Button, Card, CardMedia, Grid } from "@mui/material";
 import React from "react";
 
-export default function CardCollection({ linkGambar }) {
+export default function CardCollection({ linkGambar, id, name }) {
   return (
     <div style={{ maxWidth: 241 }}>
       <Card>
@@ -14,16 +14,17 @@ export default function CardCollection({ linkGambar }) {
       </Card>
       <Grid
         container
-        direction="row"
+        direction="column"
         justifyContent="center"
         alignItems="center"
       >
+        <h5>{name}</h5>
         <Button
           variant="contained"
           size="small"
-          href="/detailproduk"
+          href={`/detailproduk/${id}`}
           sx={{
-            bottom: "50px",
+            bottom: "110px",
             textTransform: "none",
             backgroundColor: "black",
           }}

@@ -60,7 +60,7 @@ export default function BodyAbout() {
           backgroundColor: "black",
           borderRadius: "180px",
         }}
-        href={"/footer"}
+        href="#bottom"
       >
         {"Contact Us"}
       </Button>
