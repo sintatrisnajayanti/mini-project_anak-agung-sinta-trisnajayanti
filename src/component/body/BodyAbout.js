@@ -6,7 +6,7 @@ export default function BodyAbout() {
     <div
       style={{
         textAlign: "left",
-        top: "100px",
+        top: "150px",
         left: "200px",
         position: "absolute",
       }}

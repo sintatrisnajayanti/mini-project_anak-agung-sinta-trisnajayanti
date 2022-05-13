@@ -1,23 +1,26 @@
+import { useMediaQuery } from "@mui/material";
 import { padding } from "@mui/system";
 import React from "react";
 
 export default function BodyHome() {
+  const versiHP = useMediaQuery("(max-width:600px)");
+
   return (
     <div>
       <div
         style={{
-          textAlign: "left",
-          top: "200px",
-          left: "215px",
-          position: "absolute",
+          textAlign: versiHP ? "center" : "left",
+          top: versiHP ? "100px" : "200px",
+          left: versiHP ? "" : "215px",
+          position: versiHP ? "relative" : "absolute",
         }}
       >
         <p
           style={{
             fontFamily: "montserrat",
-            fontSize: "48px",
+            fontSize: versiHP ? "30px" : "48px",
             fontWeight: "bold",
-            width: "677px",
+            width: versiHP ? "500px" : "677px",
           }}
         >
           NEW GENERATION SHOP EXPERIENCES FOR YOU
@@ -27,26 +30,27 @@ export default function BodyHome() {
             backgroundColor: "black",
             color: "white",
             padding: "33px",
-            fontSize: "20px",
-            width: "575px",
+            fontSize: versiHP ? "14px" : "20px",
+            width: versiHP ? "450px" : "575px",
           }}
         >
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
           tristique, dui ut molestie egestas, magna.
         </p>
       </div>
-
-      <img
-        src="/asset/homebody1.png"
-        alt="gambar"
-        style={{
-          maxWidth: "40vw",
-          position: "absolute",
-          zIndex: "0",
-          right: "102px",
-          bottom: "0px",
-        }}
-      ></img>
+      {!versiHP && (
+        <img
+          src="/asset/homebody1.png"
+          alt="gambar"
+          style={{
+            maxWidth: "40vw",
+            position: "absolute",
+            zIndex: "0",
+            right: "102px",
+            bottom: "0px",
+          }}
+        ></img>
+      )}
     </div>
   );
 }

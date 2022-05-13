@@ -5,8 +5,10 @@ import FormComment from "../card/FormComment";
 export default function BodyDetail({
   getData,
   clothesId,
-  description,
+  name,
+  material,
   comments,
+  sizes,
 }) {
   return (
     <div
@@ -24,7 +26,11 @@ export default function BodyDetail({
           padding: "5px",
         }}
       >
-        {description}
+        {name}
+        <br></br>
+        material: {material}
+        <br></br>
+        Ready stock size: {sizes}
       </p>
       <div style={{ overflow: "scroll", height: "70vh" }}>
         <FormComment getData={getData} clothesId={clothesId}></FormComment>

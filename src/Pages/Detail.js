@@ -27,9 +27,10 @@ export default function Detail() {
         }
         clothes_detail(where: { clothers_id: { _eq: $id } }) {
           clothers_id
-          description
+          material
           id
           price
+          sizes
         }
       }
     `
@@ -82,7 +83,9 @@ export default function Detail() {
           <BodyDetail
             getData={handleGetData}
             clothesId={data.clothes_by_pk.id}
-            description={data.clothes_detail[0].description}
+            material={data.clothes_detail[0].material}
+            name={data.clothes_by_pk.name}
+            sizes={data.clothes_detail[0].sizes}
             comments={data.clothes_comment}
           ></BodyDetail>
         </Grid>

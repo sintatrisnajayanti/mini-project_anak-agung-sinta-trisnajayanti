@@ -1,11 +1,11 @@
 import React from "react";
 import BodyCollection from "../component/body/BodyCollection";
-import Navbar from "../component/navbar/Navbar";
+import NavbarBootstrap from "../component/navbar/NavbarBootstrap";
 
 export default function Collection() {
   return (
     <div>
-      <Navbar></Navbar>
+      <NavbarBootstrap></NavbarBootstrap>
       <BodyCollection></BodyCollection>
     </div>
   );

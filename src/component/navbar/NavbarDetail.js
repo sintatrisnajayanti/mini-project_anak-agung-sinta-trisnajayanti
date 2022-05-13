@@ -15,8 +15,9 @@ export default function NavbarDetail() {
           <p
             style={{
               fontFamily: "montserrat",
-              fontSize: "36px",
+              fontSize: "20px",
               fontWeight: "bold",
+              marginTop: "35px",
             }}
           >
             BnsStore

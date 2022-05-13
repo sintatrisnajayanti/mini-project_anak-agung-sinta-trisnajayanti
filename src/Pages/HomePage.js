@@ -1,11 +1,11 @@
 import React from "react";
 import BodyHome from "../component/body/BodyHome";
-import Navbar from "../component/navbar/Navbar";
+import NavbarBootstrap from "../component/navbar/NavbarBootstrap";
 
 export default function HomePage() {
   return (
     <div>
-      <Navbar></Navbar>
+      <NavbarBootstrap></NavbarBootstrap>
       <BodyHome></BodyHome>
     </div>
   );
