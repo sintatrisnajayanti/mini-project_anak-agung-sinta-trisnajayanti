@@ -18,13 +18,17 @@ export default function CardCollection({ linkGambar, id, name }) {
         justifyContent="center"
         alignItems="center"
       >
-        <h5>{name}</h5>
+        <h5
+          style={{ fontSize: "14px", fontFamily: "montserrat", padding: "5px" }}
+        >
+          {name}
+        </h5>
         <Button
           variant="contained"
           size="small"
           href={`/detailproduk/${id}`}
           sx={{
-            bottom: "110px",
+            bottom: "80px",
             textTransform: "none",
             backgroundColor: "black",
           }}

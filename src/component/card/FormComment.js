@@ -45,10 +45,33 @@ export default function FormComment({ getData, clothesId }) {
     <div>
       <form>
         <label>Nama: </label>
-        <input onChange={handleNameChange} value={name}></input>
+        <input
+          onChange={handleNameChange}
+          value={name}
+          style={{ marginLeft: "30px" }}
+        ></input>
+        <br></br>
+        <br></br>
         <label>Komentar: </label>
-        <input onChange={handleCommentChange} value={comment}></input>
-        <button onClick={handleSubmit}>tambah komentar</button>
+        <input
+          onChange={handleCommentChange}
+          value={comment}
+          style={{ marginLeft: "4px" }}
+        ></input>
+        <button
+          onClick={handleSubmit}
+          style={{
+            marginLeft: "15px",
+            textTransform: "none",
+            fontFamily: "montserrat",
+            fontSize: "12px",
+            color: "white",
+            backgroundColor: "black",
+            borderRadius: "100px",
+          }}
+        >
+          Submit
+        </button>
       </form>
     </div>
   );

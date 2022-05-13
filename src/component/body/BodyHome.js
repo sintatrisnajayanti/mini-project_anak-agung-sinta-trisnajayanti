@@ -8,7 +8,7 @@ export default function BodyHome() {
         style={{
           textAlign: "left",
           top: "200px",
-          left: "200px",
+          left: "215px",
           position: "absolute",
         }}
       >
@@ -28,7 +28,7 @@ export default function BodyHome() {
             color: "white",
             padding: "33px",
             fontSize: "20px",
-            width: "509px",
+            width: "575px",
           }}
         >
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam

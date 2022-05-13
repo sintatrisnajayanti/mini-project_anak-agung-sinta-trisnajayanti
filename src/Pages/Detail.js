@@ -5,6 +5,7 @@ import NavbarDetail from "../component/navbar/NavbarDetail";
 import { useParams } from "react-router-dom";
 import { useQuery, gql, useLazyQuery } from "@apollo/client";
 import Footer from "../component/navbar/Footer";
+import LoadingSvg from "../component/card/LoadingSvg";
 
 export default function Detail() {
   const params = useParams();
@@ -47,7 +48,12 @@ export default function Detail() {
     setLoaded(true);
   }, []);
 
-  if (loading || !loaded) return <p>loading</p>;
+  if (loading || !loaded)
+    return (
+      <div class="position-absolute top-50 start-50 translate-middle">
+        <LoadingSvg />
+      </div>
+    );
   if (error) return <p>{error}</p>;
 
   return (

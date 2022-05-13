@@ -2,6 +2,7 @@ import { Button, Card, CardMedia, Grid } from "@mui/material";
 import React from "react";
 import CardCollection from "../card/CardCollection";
 import { useQuery, gql } from "@apollo/client";
+import LoadingSvg from "../card/LoadingSvg";
 
 export default function BodyCollection() {
   const DataProduk = [
@@ -27,7 +28,13 @@ export default function BodyCollection() {
     }
   `);
 
-  if (loading) return <p>loading</p>;
+  if (loading)
+    return (
+      <div class="position-absolute top-50 start-50 translate-middle">
+        <LoadingSvg />
+      </div>
+    );
+
   if (error) return <p>{error}</p>;
 
   return (

@@ -19,7 +19,7 @@ export default function BodyDetail({
         style={{
           color: "black",
           fontSize: "20px",
-          border: "2px solid black",
+          border: "1px solid black",
           borderRadius: "10px",
           padding: "5px",
         }}
@@ -32,10 +32,11 @@ export default function BodyDetail({
           <p
             style={{
               color: "black",
-              fontSize: "20px",
+              fontSize: "16px",
               border: "2px solid black",
               borderRadius: "10px",
               padding: "5px",
+              marginTop: "10px",
             }}
           >
             {comment.name}
