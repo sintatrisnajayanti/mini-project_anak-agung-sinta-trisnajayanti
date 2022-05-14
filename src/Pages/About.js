@@ -1,10 +1,11 @@
-import { Grid } from "@mui/material";
+import { Grid, useMediaQuery } from "@mui/material";
 import React from "react";
 import NavbarAbout from "../component/navbar/NavbarAbout";
 import BodyAbout from "../component/body/BodyAbout";
 import Footer from "../component/navbar/Footer";
 
 export default function About() {
+  const versiHP = useMediaQuery("(max-width:600px)");
   return (
     <>
       <Grid container width="100%" height="100%">
@@ -20,13 +21,15 @@ export default function About() {
           justifyContent="flex-end"
           alignItems="flex-end"
         >
-          <img
-            src="/asset/about.png"
-            alt="gambar"
-            style={{
-              height: "100vh",
-            }}
-          ></img>
+          {!versiHP && (
+            <img
+              src="/asset/about.png"
+              alt="gambar"
+              style={{
+                height: "100vh",
+              }}
+            ></img>
+          )}
         </Grid>
       </Grid>
       <Footer></Footer>

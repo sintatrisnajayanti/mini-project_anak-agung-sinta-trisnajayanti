@@ -86,6 +86,7 @@ export default function Detail() {
             material={data.clothes_detail[0].material}
             name={data.clothes_by_pk.name}
             sizes={data.clothes_detail[0].sizes}
+            price={data.clothes_detail[0].price}
             comments={data.clothes_comment}
           ></BodyDetail>
         </Grid>

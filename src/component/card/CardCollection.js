@@ -19,7 +19,12 @@ export default function CardCollection({ linkGambar, id, name }) {
         alignItems="center"
       >
         <h5
-          style={{ fontSize: "14px", fontFamily: "montserrat", padding: "5px" }}
+          style={{
+            fontSize: "14px",
+            fontFamily: "montserrat",
+            padding: "5px",
+            fontWeight: "bold",
+          }}
         >
           {name}
         </h5>

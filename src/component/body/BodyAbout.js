@@ -1,7 +1,9 @@
-import { Button } from "@mui/material";
+import { Button, useMediaQuery } from "@mui/material";
 import React from "react";
 
 export default function BodyAbout() {
+  const versiHP = useMediaQuery("(max-width:600px)");
+
   return (
     <div
       style={{
@@ -19,7 +21,7 @@ export default function BodyAbout() {
           width: "677px",
         }}
       >
-        OUR OLSHOP
+        OUR STORE
       </p>
       <p
         style={{
@@ -28,11 +30,11 @@ export default function BodyAbout() {
           width: "509px",
         }}
       >
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
-        tristique, dui ut molestie egestas, magna. Lorem ipsum dolor sit amet,
-        consectetur adipiscing elit. Nullam tristique, dui ut molestie egestas,
-        magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
-        tristique, dui ut molestie egestas, magna.
+        Brother and Sister Store (BnS Store) merupakan salah satu usaha toko
+        pakaian milik anak muda asli Bali yang berada di daerah Denpasar. Bns
+        Store ini berdiri sejak tahun 2012 berfokus pada fashion pria dan wanita
+        seperti baju kaos polos, kemeja, polo, garment, dll. Kami juga
+        menyediakan jasa sablon dan bordir.
       </p>
 
       <Button

@@ -10,8 +10,8 @@ export default function BodyHome() {
       <div
         style={{
           textAlign: versiHP ? "center" : "left",
-          top: versiHP ? "100px" : "200px",
-          left: versiHP ? "" : "215px",
+          top: "200px",
+          left: versiHP ? "" : "300px",
           position: versiHP ? "relative" : "absolute",
         }}
       >
@@ -23,19 +23,20 @@ export default function BodyHome() {
             width: versiHP ? "500px" : "677px",
           }}
         >
-          NEW GENERATION SHOP EXPERIENCES FOR YOU
+          BROTHER AND SISTER STORE GALERRY
         </p>
         <p
           style={{
+            margin: versiHP ? "23px" : "",
             backgroundColor: "black",
             color: "white",
             padding: "33px",
             fontSize: versiHP ? "14px" : "20px",
-            width: versiHP ? "450px" : "575px",
+            width: versiHP ? "450px" : "500px",
+            textAlign: "center",
           }}
         >
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
-          tristique, dui ut molestie egestas, magna.
+          "Bahan Berkualitas Model Up To Date"
         </p>
       </div>
       {!versiHP && (

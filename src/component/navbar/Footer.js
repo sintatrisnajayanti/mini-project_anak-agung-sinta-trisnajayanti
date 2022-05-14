@@ -1,11 +1,12 @@
 import React from "react";
-import { Grid } from "@mui/material";
+import { Grid, useMediaQuery } from "@mui/material";
 import FacebookOutlinedIcon from "@mui/icons-material/FacebookOutlined";
 import WhatsappOutlinedIcon from "@mui/icons-material/WhatsappOutlined";
 import StorefrontOutlinedIcon from "@mui/icons-material/StorefrontOutlined";
 import { borderRadius } from "@mui/system";
 
 export default function Footer() {
+  const versiHP = useMediaQuery("(max-width:600px)");
   return (
     <div>
       <a name="bottom" id="bottom">
@@ -58,9 +59,8 @@ export default function Footer() {
                 paddingTop: "20px",
               }}
             >
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam
+              Mampu Memberikan Berbagai Model Pakaian Dengan Bahan Berkualitas
+              Bagi Pelanggan Setianya
             </p>
           </Grid>
           <Grid item xs={4} container direction={"column"}>
@@ -89,7 +89,7 @@ export default function Footer() {
                         width: "100px",
                       }}
                     />
-                    <p style={{ color: "white" }}>bnsstore.bali</p>
+                    <p style={{ color: "white" }}>081-237-856-221</p>
                   </div>
                 </a>
                 <Grid item container>
@@ -103,7 +103,10 @@ export default function Footer() {
                           width: "100px",
                         }}
                       />
-                      <p style={{ color: "white" }}>bnsstore.bali</p>
+                      <p style={{ color: "white" }}>
+                        Jalan Achmad Yani No.398 Peguyangan Kaja Denpasar Utara
+                        Kota Denpasar Bali 80239
+                      </p>
                     </div>
                   </a>
                 </Grid>

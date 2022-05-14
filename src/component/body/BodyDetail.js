@@ -8,6 +8,7 @@ export default function BodyDetail({
   name,
   material,
   comments,
+  price,
   sizes,
 }) {
   return (
@@ -28,11 +29,13 @@ export default function BodyDetail({
       >
         {name}
         <br></br>
-        material: {material}
+        Material: {material}
         <br></br>
         Ready stock size: {sizes}
+        <br></br>
+        Harga: {price}
       </p>
-      <div style={{ overflow: "scroll", height: "70vh" }}>
+      <div style={{ overflow: "scroll", height: "60vh" }}>
         <FormComment getData={getData} clothesId={clothesId}></FormComment>
         {comments.map((comment, i) => (
           <p
@@ -67,7 +70,7 @@ export default function BodyDetail({
             }}
             href="#bottom"
           >
-            {"Contact Us"}
+            {"ORDER NOW!"}
           </Button>
         </div>
       </div>

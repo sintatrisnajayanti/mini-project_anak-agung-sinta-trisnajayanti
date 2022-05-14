@@ -1,9 +1,10 @@
-import { Button, Grid } from "@mui/material";
+import { Button, Grid, useMediaQuery } from "@mui/material";
 import React from "react";
 
 export default function NavbarAbout() {
   const currentURL = window.location.href;
   console.log(currentURL);
+  const versiHP = useMediaQuery("(max-width:600px)");
 
   const navbarButton = [{ text: "About", link: "/about" }];
   return (
@@ -15,7 +16,7 @@ export default function NavbarAbout() {
         {/* salah satu anak-nya (biar bisa dipisah antar anak kayak sekarang di sebelah kiri dia sendiri 
             daripada anak lainnya yaitu menu lain)*/}
         {/* pl itu padding left, ada karena install MUI */}
-        <Grid item xs pl="20px">
+        <Grid item xs pl="110px" pt="10px">
           <a href="/">
             <img src="/asset/logo/logo.png" alt="logo" height="100px"></img>
           </a>
