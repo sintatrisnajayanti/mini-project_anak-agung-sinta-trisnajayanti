@@ -22,7 +22,8 @@ export default function Footer() {
         >
           <Grid
             item
-            xs={4}
+            xs={12}
+            sm={4}
             container
             direction="row"
             justifyContent="center"
@@ -38,7 +39,7 @@ export default function Footer() {
               }}
             ></img>
           </Grid>
-          <Grid item xs={4}>
+          <Grid item xs={12} sm={4}>
             <h1
               style={{
                 fontFamily: "montserrat",
@@ -46,6 +47,7 @@ export default function Footer() {
                 fontWeight: "bold",
                 color: "white",
                 margin: "0px",
+                textAlign: versiHP ? "center" : "left",
               }}
             >
               BnS Store
@@ -57,13 +59,14 @@ export default function Footer() {
                 color: "white",
                 margin: "0px",
                 paddingTop: "20px",
+                textAlign: versiHP ? "center" : "left",
               }}
             >
               Mampu Memberikan Berbagai Model Pakaian Dengan Bahan Berkualitas
               Bagi Pelanggan Setianya
             </p>
           </Grid>
-          <Grid item xs={4} container direction={"column"}>
+          <Grid item xs={12} sm={4} container direction={"column"}>
             <Grid item container>
               <a href="https://www.facebook.com/bnsstore.bali">
                 <div style={{ display: "flex" }}>

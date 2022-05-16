@@ -16,7 +16,7 @@ export default function NavbarAbout() {
         {/* salah satu anak-nya (biar bisa dipisah antar anak kayak sekarang di sebelah kiri dia sendiri 
             daripada anak lainnya yaitu menu lain)*/}
         {/* pl itu padding left, ada karena install MUI */}
-        <Grid item xs pl="110px" pt="10px">
+        <Grid item xs={6} pl={versiHP ? "0px" : "110px"} pt="10px">
           <a href="/">
             <img src="/asset/logo/logo.png" alt="logo" height="100px"></img>
           </a>
@@ -27,9 +27,9 @@ export default function NavbarAbout() {
         {/* spacing = space */}
         <Grid
           item
+          xs={6}
           container
-          xs
-          pr="140px"
+          pr={versiHP ? "0px" : "140px"}
           spacing="5"
           justifyContent="flex-end"
           alignItems="center"
