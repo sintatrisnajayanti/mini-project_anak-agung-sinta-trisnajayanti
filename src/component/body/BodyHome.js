@@ -13,8 +13,8 @@ export default function BodyHome() {
           top: "200px",
           left: versiHP ? "18px" : "300px",
           position: versiHP ? "relative" : "absolute",
-          width: "100%",
-          height: "100%",
+          width: "100vw",
+          height: "100vh",
         }}
       >
         <p

@@ -11,8 +11,8 @@ export default function BodyAbout() {
         top: "150px",
         left: versiHP ? "50px" : "200px",
         position: "absolute",
-        width: "100%",
-        height: "100%",
+        width: "100vw",
+        height: "100vh",
       }}
     >
       <p
