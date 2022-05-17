@@ -1,4 +1,4 @@
-import { Button } from "@mui/material";
+import { Button, useMediaQuery } from "@mui/material";
 import React from "react";
 import FormComment from "../card/FormComment";
 
@@ -11,9 +11,11 @@ export default function BodyDetail({
   price,
   sizes,
 }) {
+  const versiHP = useMediaQuery("(max-width:600px)");
   return (
     <div
       style={{
+        margin: versiHP ? "10px" : "",
         textAlign: "left",
         maxWidth: "100vw",
       }}

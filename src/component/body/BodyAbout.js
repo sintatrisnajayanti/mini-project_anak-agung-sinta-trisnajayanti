@@ -9,16 +9,16 @@ export default function BodyAbout() {
       style={{
         textAlign: "left",
         top: "150px",
-        left: "200px",
+        left: versiHP ? "50px" : "200px",
         position: "absolute",
       }}
     >
       <p
         style={{
           fontFamily: "montserrat",
-          fontSize: "48px",
+          fontSize: versiHP ? "40px" : "48px",
           fontWeight: "bold",
-          width: "677px",
+          width: versiHP ? "450px" : "677px",
         }}
       >
         OUR STORE
@@ -26,8 +26,8 @@ export default function BodyAbout() {
       <p
         style={{
           color: "black",
-          fontSize: "20px",
-          width: "509px",
+          fontSize: versiHP ? "16px" : "20px",
+          width: versiHP ? "400px" : "509px",
         }}
       >
         Brother and Sister Store (BnS Store) merupakan salah satu usaha toko
@@ -40,11 +40,13 @@ export default function BodyAbout() {
       <Button
         variant="outlined"
         style={{
+          marginLeft: versiHP ? "90px" : "",
           textTransform: "none",
           fontFamily: "montserrat",
           color: "black",
           border: "2px solid black",
           borderRadius: "180px",
+          top: versiHP ? "20px" : "",
         }}
         href={"/collection"}
       >
@@ -61,6 +63,7 @@ export default function BodyAbout() {
           left: "20px",
           backgroundColor: "black",
           borderRadius: "180px",
+          top: versiHP ? "20px" : "",
         }}
         href="#bottom"
       >

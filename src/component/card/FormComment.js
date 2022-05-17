@@ -58,20 +58,22 @@ export default function FormComment({ getData, clothesId }) {
           value={comment}
           style={{ marginLeft: "4px" }}
         ></input>
-        <button
-          onClick={handleSubmit}
-          style={{
-            marginLeft: "15px",
-            textTransform: "none",
-            fontFamily: "montserrat",
-            fontSize: "12px",
-            color: "white",
-            backgroundColor: "black",
-            borderRadius: "100px",
-          }}
-        >
-          Submit
-        </button>
+        <div style={{ display: "flex", justifyContent: "flex-end" }}>
+          <button
+            onClick={handleSubmit}
+            style={{
+              marginLeft: "15px",
+              textTransform: "none",
+              fontFamily: "montserrat",
+              fontSize: "12px",
+              color: "white",
+              backgroundColor: "black",
+              borderRadius: "100px",
+            }}
+          >
+            Submit
+          </button>
+        </div>
       </form>
     </div>
   );

@@ -34,6 +34,7 @@ export default function Footer() {
               alt="gambar"
               style={{
                 height: "25vh",
+                margin: versiHP ? "25px" : "",
                 backgroundColor: "white",
                 borderRadius: "100%",
               }}
@@ -55,7 +56,7 @@ export default function Footer() {
             <p
               style={{
                 fontFamily: "montserrat",
-                fontSize: "24px",
+                fontSize: versiHP ? "20px" : "24px",
                 color: "white",
                 margin: "0px",
                 paddingTop: "20px",
@@ -66,7 +67,7 @@ export default function Footer() {
               Bagi Pelanggan Setianya
             </p>
           </Grid>
-          <Grid item xs={12} sm={4} container direction={"column"}>
+          <Grid item xs={12} sm={4} container direction={"column"} pt={"50px"}>
             <Grid item container>
               <a href="https://www.facebook.com/bnsstore.bali">
                 <div style={{ display: "flex" }}>

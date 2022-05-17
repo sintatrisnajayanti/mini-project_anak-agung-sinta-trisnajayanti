@@ -11,16 +11,16 @@ export default function BodyHome() {
         style={{
           textAlign: versiHP ? "center" : "left",
           top: "200px",
-          left: versiHP ? "" : "300px",
+          left: versiHP ? "18px" : "300px",
           position: versiHP ? "relative" : "absolute",
         }}
       >
         <p
           style={{
             fontFamily: "montserrat",
-            fontSize: versiHP ? "30px" : "48px",
+            fontSize: versiHP ? "24px" : "48px",
             fontWeight: "bold",
-            width: versiHP ? "500px" : "677px",
+            width: versiHP ? "450px" : "677px",
           }}
         >
           BROTHER AND SISTER STORE GALERRY
@@ -30,9 +30,9 @@ export default function BodyHome() {
             margin: versiHP ? "23px" : "",
             backgroundColor: "black",
             color: "white",
-            padding: "33px",
+            padding: versiHP ? "22px" : "33px",
             fontSize: versiHP ? "14px" : "20px",
-            width: versiHP ? "450px" : "500px",
+            width: versiHP ? "420px" : "500px",
             textAlign: "center",
           }}
         >

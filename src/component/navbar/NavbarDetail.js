@@ -1,14 +1,21 @@
-import { Button, Grid } from "@mui/material";
+import { Button, Grid, useMediaQuery } from "@mui/material";
 import React from "react";
 
 export default function NavbarDetail() {
   const currentURL = window.location.href;
   console.log(currentURL);
   const ButtonBack = [{ text: "Back", link: "/collection" }];
+  const versiHP = useMediaQuery("(max-width:600px)");
   return (
     <div>
       <Grid container>
-        <Grid item container xs={10} direction="row">
+        <Grid
+          item
+          container
+          xs={10}
+          direction="row"
+          pl={versiHP ? "10px" : "0"}
+        >
           <a href="/">
             <img src="/asset/logo/logo.png" alt="logo" height="100px"></img>
           </a>
