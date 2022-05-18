@@ -9,13 +9,6 @@ export default function BodyCollection() {
     {
       link: "https://support.enplug.com/hc/article_attachments/360000196983/2018-01-25_17-04-29.png",
     },
-    { link: "/asset/homebody1.png" },
-    { link: "/asset/homebody1.png" },
-    { link: "/asset/homebody1.png" },
-    { link: "/asset/homebody1.png" },
-    { link: "/asset/homebody1.png" },
-    { link: "/asset/homebody1.png" },
-    { link: "/asset/homebody1.png" },
   ];
 
   const { loading, error, data } = useQuery(gql`
@@ -47,6 +40,8 @@ export default function BodyCollection() {
         alignItems="flex-start"
         padding={"10px"}
       >
+        {/* map untuk array yang nampilin setiap data yang ada
+         */}
         {data.clothes.map((item) => (
           <Grid item>
             <CardCollection

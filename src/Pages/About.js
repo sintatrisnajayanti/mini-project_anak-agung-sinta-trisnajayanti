@@ -8,7 +8,7 @@ export default function About() {
   const versiHP = useMediaQuery("(max-width:600px)");
   return (
     <>
-      <Grid container width="100%" minHeight="100vh">
+      <Grid container width="100%" height="100vh">
         <Grid item xs={12} sm={8}>
           <NavbarAbout></NavbarAbout>
           <BodyAbout></BodyAbout>
@@ -16,7 +16,6 @@ export default function About() {
         {!versiHP && (
           <Grid
             item
-            xs={12}
             sm={4}
             container
             direction="row"
