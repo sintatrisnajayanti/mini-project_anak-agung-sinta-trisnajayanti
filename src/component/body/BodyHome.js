@@ -6,15 +6,13 @@ export default function BodyHome() {
   const versiHP = useMediaQuery("(max-width:600px)");
 
   return (
-    <div>
+    <div style={{ width: "100%", height: "100%" }}>
       <div
         style={{
           textAlign: versiHP ? "center" : "left",
           top: "200px",
           left: versiHP ? "18px" : "300px",
           position: versiHP ? "relative" : "absolute",
-          width: "100vw",
-          height: "100vh",
         }}
       >
         <p
